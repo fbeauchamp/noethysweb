@@ -7,10 +7,7 @@ $app['debug'] = true;
 
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
   'twig.class_path'       => __DIR__ . '/vendor/Twig/lib',
-   'twig.path'             => array(
-       __DIR__ . '/views',
-       __DIR__ . '/web/content'
-   ),
+   'twig.path'             =>  __DIR__ . '/views',
    'twig.options'          => array(
        'charset'           => 'utf-8',
        'strict_variables'  => true
